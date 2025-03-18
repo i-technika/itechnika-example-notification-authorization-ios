@@ -2,8 +2,8 @@
 ## At what point can we receive the FCM Registration ID on iOS?
 
 ### Blog  
-***Korean***: https://d2j2logs.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html
-***English***: https://d2j2logs-en.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html
+***Korean***: https://d2j2logs.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html  
+***English***: https://d2j2logs-en.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html  
 ***Basaha Indonesia***: https://d2j2logs-id.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html  
 
 ***
@@ -41,9 +41,9 @@
 ## No APNS token specified before fetching FCM Token on iOS
 
 ### Blog  
-***Korean***: https://d2j2logs.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html
-***English***: https://d2j2logs-en.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html
-***Basaha Indonesia***: https://d2j2logs-id.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html
+***Korean***: https://d2j2logs.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html  
+***English***: https://d2j2logs-en.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html  
+***Basaha Indonesia***: https://d2j2logs-id.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html  
 
 ***
 
