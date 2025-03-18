@@ -1,5 +1,12 @@
 # itechnika-example-notification-authorization-ios
-At what point can we receive the FCM Registration ID on iOS?
+## At what point can we receive the FCM Registration ID on iOS?
+
+### Blog  
+***Korean***: https://d2j2logs.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html
+***English***: https://d2j2logs-en.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html
+***Basaha Indonesia***: https://d2j2logs-id.blogspot.com/2025/03/at-what-point-can-we-receive-fcm.html  
+
+***
 
 #### When the app is launched immediately after installation and the user selects 'Allow' on the Notification Authorization Popup:  
 1. application:didFinishLaunchingWithOptions:nil
@@ -29,14 +36,22 @@ At what point can we receive the FCM Registration ID on iOS?
 4. application:didRegisterForRemoteNotificationsWithDeviceToken:32 bytes
 5. Registration ID:Optional("...."):nil
 
+***
 
-No APNS token specified before fetching FCM Token on iOS
+## No APNS token specified before fetching FCM Token on iOS
+
+### Blog  
+***Korean***: https://d2j2logs.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html
+***English***: https://d2j2logs-en.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html
+***Basaha Indonesia***: https://d2j2logs-id.blogspot.com/2025/03/no-apns-token-specified-before-fetching.html
+
+***
 
 ```swift
 func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
     print("application:didRegisterForRemoteNotificationsWithDeviceToken:\(deviceToken)")
     
-    Messaging.messaging().apnsToken = deviceToken
+    Messaging.messaging().apnsToken = deviceToken // Force assign APNs token
     Messaging.messaging().token { token, error in
         print("Registration ID:\(String(describing: token)):\(String(describing: error))")
     }
