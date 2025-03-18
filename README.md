@@ -28,3 +28,17 @@ At what point can we receive the FCM Registration ID on iOS?
 3. onResume (UIApplication.willEnterForegroundNotification)
 4. application:didRegisterForRemoteNotificationsWithDeviceToken:32 bytes
 5. Registration ID:Optional("...."):nil
+
+
+No APNS token specified before fetching FCM Token on iOS
+
+```swift
+func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    print("application:didRegisterForRemoteNotificationsWithDeviceToken:\(deviceToken)")
+    
+    Messaging.messaging().apnsToken = deviceToken
+    Messaging.messaging().token { token, error in
+        print("Registration ID:\(String(describing: token)):\(String(describing: error))")
+    }
+}
+```
