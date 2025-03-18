@@ -61,6 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         print("application:didRegisterForRemoteNotificationsWithDeviceToken:\(deviceToken)")
         
+        Messaging.messaging().apnsToken = deviceToken
         Messaging.messaging().token { token, error in
             print("Registration ID:\(String(describing: token)):\(String(describing: error))")
         }
